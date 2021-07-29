@@ -1,0 +1,287 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #1F2020;
+    padding: 10px; 
+}
+
+.header {
+    
+}
+
+.headerlistbutton > a {
+    color: aliceblue;
+    text-decoration : none;
+
+}
+
+li.headerlistbutton > a:after {
+    content: '' ;
+border-bottom: 2px solid #1F2020 ;
+  background-color : #1F2020 ;
+  color: #1F2020;
+margin-left: 5px ;
+margin-right: 5px ;
+  margin-top: 0px ;
+  
+display: block ;
+      transition: all 0.3s ease-out;
+}
+
+li.headerlistbutton:hover > a:after {
+      content: '' ;
+  border-bottom: 2px solid #FFFFFF ;
+	background-color : #FFFFFF ;
+    color: #FFFFFF;
+  margin-left: 5px ;
+  margin-right: 5px ;
+	margin-top: 4px ;
+	
+  display: block ;
+		transition: all 0.3s ease-out;
+}
+
+.headerlistbutton {
+    padding: 4px 55px 4px 55px;
+    transition: all 0.3s ease-out;
+}
+
+.headerlistbutton:hover {
+    padding: 4px 55px 0 55px;
+    transition: all 0.3s ease-out;
+}
+
+ul
+{
+  display:flex;  
+  list-style:none;
+}
+
+#home {
+    background-image: url(../images/homeBackground.jpg);
+    background-size: cover;
+    height: 100vh !important;
+}
+
+.opcHome {
+    background: rgba(31, 31, 32, 0.5);
+    display: flex;
+    align-items: center;
+    height: 100vh !important;
+}
+
+.welcome {
+    margin: 0 auto;
+    top: 50%;
+  
+    width: 800px;
+    color: aliceblue;
+    text-align: center;
+    background: rgba(31, 31, 32, 0.75);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+#propos {
+    background: #E6C7C2;
+    background-size: cover;
+    height: 100vh !important;
+    
+}
+
+.proposmarge {
+    padding: 8%;
+}
+
+.proposheadline {
+    text-align: center;
+}
+
+.left {
+    width: 17%;
+   /* background: #FFFFFF;*/
+    float: left;
+    height: 100%;
+    padding: 1%;
+}
+
+.right {
+    margin-left: 17%;
+    /*background: #FF0000;*/
+    padding: 1%;
+}
+
+.proposheadline {
+    margin-bottom: 0;
+}
+
+.proposubline {
+    margin-top: 0;
+}
+
+.proposdescdiv {
+
+    padding: 6%;
+    padding-top: 1%;
+}
+
+.nocenter {
+    text-align: left;
+}
+
+.normalfontwo8 {
+    font-weight: 500;
+}
+
+.descparatext {
+    font-size: 1.17em;
+    text-align: justify;
+}
+
+#crossimg {
+    height: 20px;
+    width: 20px;
+}
+
+.widgetcontact {
+    /*E6C7C2*/
+    position: relative;
+    opacity: 0;
+    background: #1F2020;
+    color: aliceblue;
+    border-radius: 8px;
+    margin-left: 50%;
+    margin-right: 11%;
+    padding: 0 2% 2% 2%;
+    transition: all 0.5s ease-out !important;
+}
+
+.widgetcontactonclick {
+    position: relative;
+    opacity: 1;
+    background: #1F2020 !important;
+    color: aliceblue !important;
+    border-radius: 8px !important;
+    margin-left: 50% !important;
+    margin-right: 11% !important;
+    padding: 1% 2% 2% 2% !important;
+    transition: all 0.5s ease-out !important;
+}
+
+#compet {
+    height: 100vh !important;
+    background: #4E5851;
+    background-size: cover;
+}
+
+.color {
+    padding: 8%;
+}
+
+.competlang {
+    margin: auto;
+}
+
+#formation {
+    height: 100vh !important;
+    background: #D1CDDA;
+    background-size: cover;
+}
+
+.formargin {
+    padding: 8%;
+    position: static !important;
+}
+
+#exp {
+    height: 100vh !important;
+    background: #535150;
+    color: #D1CDDA;
+}
+
+#projet {
+    height: 100vh !important;
+    background: #AEE1CD;
+}
+
+.left3 {
+    width: 32%;
+   /* background: #FFFFFF;*/
+    float: left;
+    height: auto !important;
+    padding: 1% 0 1% 1%;
+}
+
+
+
+.right3 {
+    margin-left: 33%;
+    /*background: #FF0000;*/
+    
+    border-left: 5px solid #000000;
+    height: auto !important;
+}
+
+.left4 {
+    width: 49%;
+   /* background: #FFFFFF;*/
+    float: left;
+    height: auto !important;
+    padding: 1% 0 1% 1%;
+}
+
+.right4 {
+    margin-left: 50%;
+    /*background: #FF0000;*/
+    padding: 1% 1% 1% 0;
+    border-left: 5px solid #000000;
+    height: auto !important;
+}
+
+#footer {
+    padding: 10px; background: #25282A;
+
+}
+
+.footercontact {
+    margin-left: 150px;
+}
+
+.footercontactinfo {
+    margin-left: 180px;
+}
+
+.left2 {
+    width: 50%;
+   /* background: #FFFFFF;*/
+    float: left;
+    height: auto !important;
+    padding: 1% 0 1% 1%;
+}
+
+.right2 {
+    margin-left: 51%;
+    /*background: #FF0000;*/
+    padding: 1% 1% 1% 0;
+    border-left: 5px solid #000000;
+    height: auto !important;
+}
+
+#exp2 {
+    height: auto !important;
+    background: #535150;
+    color: #FFFFFF;
+}

@@ -1,0 +1,28 @@
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    width: 12px;
+    opacity : 0;
+    background : #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border: 2px solid #000000;
+    width: 10px;
+    filter: blur(4px);
+    background : #1F2020;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    border: 2px solid #000000;
+    width: 10px;
+    filter: blur(8px);
+    background : #1F2020;
+}
