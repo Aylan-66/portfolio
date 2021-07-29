@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/scrollbar.css">
+        <link rel="stylesheet" href="./css/timelinev2.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <ul class="headerlist">
+                    <li class="headerlistbutton">
+                        <a href="#home">Acceuil</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#propos">A propos</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#compet">Mes compétences</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#formation">Formations</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#exp">Mes Experiences</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#projet">Mes Projets</a>
+                    </li>
+                    <li class="headerlistbutton">
+                        <a href="#exp2">Me contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="home" style="height: 1500px;">
+            <div class="opcHome">
+                <div class="welcome">
+                    <h1>
+                        Aylan Bounaceur
+                    </h1>
+                    <h2>
+                        Développeur web
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div id="propos" style="height: 1500px;">
+            <div class="proposmarge">
+                <div class="containere">
+                    <div class="row">
+                      <div class="col proposheadline">
+                        <h1 class="proposheadline">A PROPOS</h1>
+                        <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <img src="./images/photo.jpg" alt="">
+                        </div>
+                        <div class="right proposdescdiv">
+                            <h2 class="proposheadline proposubline nocenter normalfontwo8">Aylan Bounaceur</h2>
+                            <h3 class="proposubline">Etudiant et alternant en tant que développeur web</h3>
+
+                            <p class="descparatext normalfontwo8">Etudiant au sein de l'ETNA (école des technologies numériques avancées) et en alternance en tant que développeur web dans la sociéte Tilbury, je suis à la recherche d'un poste d'alternant pour ma troisieme années. Ce portfolio a pour but de vous présenter mes formations, diplomes et différents projets. 
+                                <a href="" id="scroll"></a>
+                            </p>
+                            <p class="descparatext normalfontwo8">Pour plus d détails à mon sujet, vous pouvez consultez mon cv <a id="" href="https://www.linkedin.com/posts/aylan-bounaceur_cv-aylan-bounaceur-activity-6820263263243120640-8GOT" style="color: #000000;">ci joint.</a></p>
+                            <p class="descparatext normalfontwo8">Si vous avez des questions vous pouvez aussi me contacter aux <a id="" href="javascript:my_function();" style="color: #000000;">coodronées suivante.</a></p>
+                            <div id="text" class="widgetcontact"><a id="foo" href="javascript:my_close();"><img style="height: 12px; width: 12px;   position: absolute;
+                                right: 0; margin-right: 2%;" src="./images/red-cross-1.png" alt=""></a><p>Résau: <a href="https://www.linkedin.com/in/aylan-bounaceur/" style="color: aliceblue;">Linkedin</a></p><p>Email: aylan.b@icloud.com</p><p style="margin-bottom: 0;">Phone: 06 51 75 02 69</p></div>
+                            <script>
+                                function my_function() {
+                                    var element = document.getElementById("text");
+                                    
+                                    element.classList.add("widgetcontactonclick");
+                                    console.log("vzlid");
+                                }
+                                function my_close() {
+                                    var element = document.getElementById("text");
+                                    element.classList.remove("widgetcontactonclick");
+                              
+                                    console.log("valid");
+                                }
+                                window.addEventListener('scroll', function() {
+                                    var element = document.querySelector('#scroll');
+                                    var position = element.getBoundingClientRect();
+
+                                    // checking whether fully visible
+                                    if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                                        console.log('Element is fully visible in screen');
+                                    } else if(position.top < window.innerHeight && position.bottom >= 0) {
+                                        console.log('Element is partially visible in screen');
+                                    } else  {
+                                        var element2 = document.getElementById("text");
+                                    element2.classList.remove("widgetcontactonclick");
+                              
+                                    console.log("valid");
+                                    }
+                                });
+                            </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div id="compet" style="height: 1500px;">
+            <div class="color" >
+            <div class="proposheadline">
+                <h1 class="proposheadline">MES COMPETENCES</h1>
+                <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
+                <div>
+                    <h2>Les languages informatiques</h2>
+                    <ul class="headerlist">
+                        <li class="competlang">
+                            <img style="width: 150px; height: 81px;" src="./images/1200px-PHP-logo.svg.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 107px; height: 150px;" src="./images/CSS3_logo_and_wordmark.svg.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/Typescript_logo_2020.svg.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/480px-Unofficial_JavaScript_logo_2.svg.png">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/c-programming.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/180px-C_Sharp_wordmark.svg.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 85px; height: 150px;" src="./images/1200px-Java_Logo.svg.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Les Frameworks</h2>
+                    <ul class="headerlist">
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/laravel-mark-red-type-black_w1280.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/1200px-.NET_Core_Logo.svg_.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/nodejs-new-pantone-black.png" alt="">
+                        </li>
+                        <li class="competlang">
+                            <img style="width: 150px; height: 150px;" src="./images/logo-react-js.png" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="formation">
+            <div class="formargin">
+                <div class="col proposheadline">
+                    <h1 class="proposheadline">MES FORMATIONS</h1>
+                    <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
+                  </div>
+                <div class="left2" >
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p>2020-2021</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p>2019-2020</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p style="visibility: hidden; margin-bottom: 0;">hidden</p><p style="margin-top: 0;">2016-2019</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                </div>
+                <div class="right2">
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p>Année de préparation accélérée à l'ETNA</p></h2>
+                        <p class="timedesc">ETNA, École des Technologies Numériques
+                            Avancées - Campus Paris-Ivry.
+                            </p>
+                    </div>
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p>Année en maths informatique physique</p></h2>
+                        <p class="timedesc">Université de Cergy-Pontoise UFR Sciences
+                            </p>
+                    </div>
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p> Baccalauréat Scientifique, <br>
+                            Brevet d’initiation à l'aéronautique</p></h2>
+                        <p class="timedesc">Lycée Polyvalent Gustave Monod -Enghien les Bains
+                            </p>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+        <div id="exp">
+            <div class="formargin">
+                <div class="col proposheadline">
+                    <h1 class="proposheadline">MES EXPERIENCES</h1>
+                    <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
+                  </div>
+                <div class="left2" >
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p>6 av - 8 oct 2021</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p>Decembre 2019</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                    <div class="testdotr">
+                        <h2 class="titleformat"><p>Aout 2016 & Aout 2017</p></h2>
+                        <p class="timedesc" style="visibility: hidden;">hidden</p>
+                    </div>
+                </div>
+                <div class="right2">
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p>Développeur php HTML en
+                            alternance
+                            </p></h2>
+                        <p class="timedesc">Optimisation et développement de nouvelles
+                            fonctionnalités d'un intra en php, création de pages
+                            visuels responsive en HTML.
+                            </p>
+                    </div>
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p>Marché de Noel d'Enghien les Bains
+                        </p></h2>
+                        <p class="timedesc">Supervision de la sécurité d'une patinoire
+                            Assistance au niveau des différentes activités.
+                            </p>
+                    </div>
+                    <div class="testdoti">
+                        <h2 class="titleformat"><p>Chantier citoyen d'Enghien
+                            les bains</p></h2>
+                        <p class="timedesc">Aider les ouvriers du bâtiment de la ville dans leurs
+                            différents tâches.
+                            Travail section maçonnerie et électricité.</p>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+        <div id="projet">
+            <div class="formargin">
+                <div class="col proposheadline">
+                    <h1 class="proposheadline">MES PROJETS</h1>
+                    <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
+                    <div class="left3" >
+                        <div>
+                            <h2>
+                                Octobre - Décembre 2020 - Site e-commerce - ETNA
+                            </h2>
+                            <h2 style="font-weight: 500;   text-align: justify;
+                            text-justify: inter-word; padding: 5%;">
+                                Réalisation d'un site e-commerce complet un login register, des cookies, un catalogue de produits et un panier.
+
+
+Framework LaravelHTML, CSS, JS, PHP
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="right3" >
+                        <div class="left4" >
+                            <h2>
+                                Mars 2021 & Juin 202- Développement d'une API REST -ETNA</h2>
+                                <h2 style="font-weight: 500;   text-align: justify;
+                                text-justify: inter-word; padding: 5%;">
+                                Développement d'une API rest avec le Framework laravel déstinée a une application android de restauration. PHP.
+<br><br>
+                                Développement d'une API rest avec le Framework ASP.NET core avec login register et filtre. C#, SQL server.
+                                </h2>
+                        </div>
+                        <div class="right4" >
+                            <h2>
+                                Avril 2021 - App android API request - ETNA
+                            </h2>
+                            <h2 style="font-weight: 500;   text-align: justify;
+                            text-justify: inter-word; padding: 5%;">
+                            Développement d'une application mobile se servant de l'API laravel précédemment développée comme back. Les requetes ont été faite en Java et le front en XML.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+        <div id="exp2">
+            <div class="formargin" style="padding: 4%;">
+                <div class="left5">
+                    <h2 class="footercontact">Information contact</h2>
+                    <h3 class="footercontactinfo">Téléphone: <br> 06 51 75 02 69</h3>
+                    <h3 class="footercontactinfo">Email: <br> aylan.b@icloud.com</h3>
+                    <h3 class="footercontactinfo">Ville: <br> Enghien les Bains <br>95880</h3>
+                </div>
+            
+                <div class="right5"  style="border: none;">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
