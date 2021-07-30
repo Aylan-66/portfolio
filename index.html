@@ -30,10 +30,84 @@
                     <li class="headerlistbutton">
                         <a href="#exp2">Me contacter</a>
                     </li>
-                </ul>
+                </ul> 
+                <div class="menu"><a href="javascript:my_menu();"><img id="img1" class="ham" src="./images/hamburger-menu-icon-png-9.jpg" alt=""></a>
+                                    </div>
             </div>
         </header>
-        <div id="home" style="height: 1500px;">
+        <div id="menuoffas" class="menuaffoff">
+            <div class="menu">
+            <a href="javascript:my_menuclose();"><img id="img2" class="clsoff" src="./images/close-button-icon-15.jpg" alt=""></a>
+        </div>
+            <ul class="headerlistmenu">
+                <li class="headerlistmenua">
+                    <a href="#home">ACCUEIL</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#propos">A PROPOS</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#compet">MES COMPETENCES</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#formation">FORMATIONS</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#exp">MES EXPERIENCES</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#projet">MES PROJETS</a>
+                </li>
+                <li class="headerlistmenua">
+                    <a href="#exp2">ME CONTACTER</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            function my_menu() {
+                var element = document.getElementById("menuoffas");
+                var img1 = document.getElementById("img1");
+                var img2 = document.getElementById("img2");
+                img1.classList.remove("ham");
+                img1.classList.add("hamoff");
+                img2.classList.remove("clsoff");
+                img2.classList.add("cls");
+                element.classList.remove("menuaffoff");
+                element.classList.add("menuaff");
+                console.log("valid");
+            }
+            function my_menuclose() {
+                var element = document.getElementById("menuoffas");
+                var img1 = document.getElementById("img1");
+                var img2 = document.getElementById("img2");
+                img1.classList.add("ham");
+                img1.classList.remove("hamoff");
+                img2.classList.add("clsoff");
+                img2.classList.remove("cls");
+                element.classList.add("menuaffoff");
+                element.classList.remove("menuaff");
+                console.log("valid");
+            }
+            window.onload = function() {
+                var anchors = document.getElementsByClassName("headerlistmenua");
+                for(var i = 0; i < anchors.length; i++) {
+                    var anchor = anchors[i];
+                    var element = document.getElementById("menuoffas");
+                    var img1 = document.getElementById("img1");
+                var img2 = document.getElementById("img2");
+
+                    anchor.onclick = function() {
+                        img1.classList.add("ham");
+                img1.classList.remove("hamoff");
+                img2.classList.add("clsoff");
+                img2.classList.remove("cls");
+                        element.classList.remove("menuaff");
+                        element.classList.add("menuaffoff");
+                    }
+                }
+            }
+        </script>
+        <div class="home heightbloc" id="home">
             <div class="opcHome">
                 <div class="welcome">
                     <h1>
@@ -45,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div id="propos" style="height: 1500px;">
+        <div class="propos heightbloc" id="propos">
             <div class="proposmarge">
                 <div class="containere">
                     <div class="row">
@@ -63,7 +137,7 @@
                             <h3 class="proposubline">Etudiant et alternant en tant que développeur web</h3>
 
                             <p class="descparatext normalfontwo8">Etudiant au sein de l'ETNA (école des technologies numériques avancées) et en alternance en tant que développeur web dans la sociéte Tilbury, je suis à la recherche d'un poste d'alternant pour ma troisieme années. Ce portfolio a pour but de vous présenter mes formations, diplomes et différents projets. 
-                                <a href="" id="scroll"></a>
+                                <a href="" id="scroll" width="0"></a>
                             </p>
                             <p class="descparatext normalfontwo8">Pour plus d détails à mon sujet, vous pouvez consultez mon cv <a id="" href="https://www.linkedin.com/posts/aylan-bounaceur_cv-aylan-bounaceur-activity-6820263263243120640-8GOT" style="color: #000000;">ci joint.</a></p>
                             <p class="descparatext normalfontwo8">Si vous avez des questions vous pouvez aussi me contacter aux <a id="" href="javascript:my_function();" style="color: #000000;">coodronées suivante.</a></p>
@@ -105,43 +179,76 @@
                   </div>
             </div>
         </div>
-        <div id="compet" style="height: 1500px;">
-            <div class="color" >
+        <div class="compet heightbloc" id="compet">
+            <div class="proposmarge" >
             <div class="proposheadline">
                 <h1 class="proposheadline">MES COMPETENCES</h1>
                 <h4 class="proposubline">Afin d'en savoir plus sur moi...</h4>
                 <div>
                     <h2>Les languages informatiques</h2>
-                    <ul class="headerlist">
-                        <li class="competlang">
-                            <img style="width: 150px; height: 81px;" src="./images/1200px-PHP-logo.svg.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 150px; height: 150px;" src="./images/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 107px; height: 150px;" src="./images/CSS3_logo_and_wordmark.svg.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 150px; height: 150px;" src="./images/Typescript_logo_2020.svg.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 150px; height: 150px;" src="./images/480px-Unofficial_JavaScript_logo_2.svg.png">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 150px; height: 150px;" src="./images/c-programming.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 150px; height: 150px;" src="./images/180px-C_Sharp_wordmark.svg.png" alt="">
-                        </li>
-                        <li class="competlang">
-                            <img style="width: 85px; height: 150px;" src="./images/1200px-Java_Logo.svg.png" alt="">
-                        </li>
-                    </ul>
+                    <div class="hid1">
+                        <ul class="headerlist2">
+                            <li class="competlang">
+                                <img style="width: 150px; height: 81px;" src="./images/1200px-PHP-logo.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 107px; height: 150px;" src="./images/CSS3_logo_and_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/Typescript_logo_2020.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/480px-Unofficial_JavaScript_logo_2.svg.png">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/c-programming.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/180px-C_Sharp_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 85px; height: 150px;" src="./images/1200px-Java_Logo.svg.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hid2">
+                        <ul class="headerlist3">
+                            <li class="competlang">
+                                <img style="width: 150px; height: 81px;" src="./images/1200px-PHP-logo.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 107px; height: 150px;" src="./images/CSS3_logo_and_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/Typescript_logo_2020.svg.png" alt="">
+                            </li>
+                        </ul>
+                        <ul class="headerlist3">
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/480px-Unofficial_JavaScript_logo_2.svg.png">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/c-programming.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 150px; height: 150px;" src="./images/180px-C_Sharp_wordmark.svg.png" alt="">
+                            </li>
+                            <li class="competlang">
+                                <img style="width: 85px; height: 150px;" src="./images/1200px-Java_Logo.svg.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <div>
                     <h2>Les Frameworks</h2>
-                    <ul class="headerlist">
+                    <ul class="headerlistt">
                         <li class="competlang">
                             <img style="width: 150px; height: 150px;" src="./images/laravel-mark-red-type-black_w1280.png" alt="">
                         </li>
@@ -160,7 +267,7 @@
               </div>
             </div>
         </div>
-        <div id="formation">
+        <div class="formation heightbloc" id="formation">
             <div class="formargin">
                 <div class="col proposheadline">
                     <h1 class="proposheadline">MES FORMATIONS</h1>
@@ -202,7 +309,7 @@
       
             </div>
         </div>
-        <div id="exp">
+        <div class="exp heightbloc" id="exp">
             <div class="formargin">
                 <div class="col proposheadline">
                     <h1 class="proposheadline">MES EXPERIENCES</h1>
@@ -250,7 +357,7 @@
       
             </div>
         </div>
-        <div id="projet">
+        <div class="projet heightbloc" id="projet">
             <div class="formargin">
                 <div class="col proposheadline">
                     <h1 class="proposheadline">MES PROJETS</h1>
@@ -295,18 +402,21 @@ Framework LaravelHTML, CSS, JS, PHP
             </div>
         </div>
         <div id="exp2">
-            <div class="formargin" style="padding: 4%;">
+            <div class="formargina" style="padding: 2%;">
                 <div class="left5">
-                    <h2 class="footercontact">Information contact</h2>
+                    <h2 class="footercontact" style="margin-top: 0;">INFORMATION CONTACT</h2>
                     <h3 class="footercontactinfo">Téléphone: <br> 06 51 75 02 69</h3>
                     <h3 class="footercontactinfo">Email: <br> aylan.b@icloud.com</h3>
-                    <h3 class="footercontactinfo">Ville: <br> Enghien les Bains <br>95880</h3>
+                    <h3 class="footercontactinfo" style="margin-bottom: 0;">Ville: <br> Enghien les Bains <br>95880</h3>
                 </div>
             
                 <div class="right5"  style="border: none;">
-                    
+                    <a style="height: 200px; width: 200px;" href="https://www.linkedin.com/in/aylan-bounaceur/"><img style="height: 100px; width: 100px;"  src="./images/768px-LinkedIn_logo_initials.png" alt=""></a>
                 </div>
             </div>
         </div>
     </body>
 </html>
+
+
+
