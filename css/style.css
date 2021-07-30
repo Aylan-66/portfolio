@@ -264,7 +264,7 @@ h1 {
 
 @media (min-height: 1401px) {
     .propos {
-        height: 800px;
+        height: 900px;
     }
 }
 
@@ -329,7 +329,7 @@ h1 {
 }
 
 .proposdescdiv {
-
+    font-size: larger;
     padding: 6%;
     padding-top: 1%;
 }
@@ -343,7 +343,7 @@ h1 {
 }
 
 .descparatext {
-    font-size: 1.17em;
+    font-size: 1.29em;
     text-align: justify;
 }
 
@@ -352,30 +352,111 @@ h1 {
     width: 20px;
 }
 
-.widgetcontact {
-    /*E6C7C2*/
-    position: relative;
-    opacity: 0;
-    background: #1F2020;
-    color: aliceblue;
-    border-radius: 8px;
-    margin-left: 50%;
-    margin-right: 11%;
-    padding: 0 2% 2% 2%;
-    transition: all 0.5s ease-out !important;
+@media (max-height: 690px) {
+
+    @media (max-width: 990px) {
+
+    }
+
+    @media (min-width: 991px) {
+        .widgetcontact {
+            /*E6C7C2*/
+            position: relative;
+            opacity: 0;
+            background: #1F2020;
+            color: aliceblue;
+            border-radius: 8px;
+            margin-left: 50%;
+            margin-right: 11%;
+            padding: 0 2% 2% 2%;
+            transition: all 0.5s ease-out !important;
+        }
+        
+        .widgetcontactonclick {
+            position: relative;
+            opacity: 1;
+            background: #1F2020 !important;
+            color: aliceblue !important;
+            border-radius: 8px !important;
+            margin-left: 50% !important;
+            margin-right: 11% !important;
+            padding: 1% 2% 2% 2% !important;
+            transition: all 0.5s ease-out !important;
+        }
+    }
+
 }
 
-.widgetcontactonclick {
-    position: relative;
-    opacity: 1;
-    background: #1F2020 !important;
-    color: aliceblue !important;
-    border-radius: 8px !important;
-    margin-left: 50% !important;
-    margin-right: 11% !important;
-    padding: 1% 2% 2% 2% !important;
-    transition: all 0.5s ease-out !important;
+@media (min-height: 691px) {
+
+    @media (max-width: 990px) {
+        .widgetcontact {
+            /*E6C7C2*/
+            position: relative;
+            opacity: 0;
+            background: #1F2020;
+            color: aliceblue;
+            border-radius: 8px;
+            height: 340px;
+            font-size: 38px;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 0 2% 2% 2%;
+            transition: all 0.5s ease-out !important;
+        }
+        
+        .widgetcontactonclick {
+            position: relative;
+            opacity: 1;
+            background: #1F2020 !important;
+            color: aliceblue !important;
+            border-radius: 8px !important;
+            height: 340px;
+            font-size: 38px;
+            margin-left: 2% !important;
+            margin-right: 2% !important;
+            padding: 1% 2% 2% 2% !important;
+            transition: all 0.5s ease-out !important;
+        }
+
+        #redcross {
+            height: 30px; width: 30px;   position: absolute;
+                                    right: 0; margin-right: 5%;
+                                    margin-top: 5%
+        }
+
+    }
+
+    @media (min-width: 991px) {
+        .widgetcontact {
+            /*E6C7C2*/
+            position: relative;
+            opacity: 0;
+            background: #1F2020;
+            color: aliceblue;
+            border-radius: 8px;
+            margin-left: 50%;
+            margin-right: 11%;
+            padding: 0 2% 2% 2%;
+            transition: all 0.5s ease-out !important;
+        }
+        
+        .widgetcontactonclick {
+            position: relative;
+            opacity: 1;
+            background: #1F2020 !important;
+            color: aliceblue !important;
+            border-radius: 8px !important;
+            margin-left: 50% !important;
+            margin-right: 11% !important;
+            padding: 1% 2% 2% 2% !important;
+            transition: all 0.5s ease-out !important;
+        }
+    }
+
 }
+
+
 
 @media (max-height: 690px) {
     .compet {
